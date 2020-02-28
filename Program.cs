@@ -54,6 +54,10 @@ namespace ListIntro
             { { "Name", "Brenda" }, { "Cohort", "Day 37" }
             };
 
+            foreach (KeyValuePair<string, string> pair in student)
+            {
+                Console.WriteLine ($"The student's {pair.Key} is {pair.Value}");
+            }
         }
     }
 }
